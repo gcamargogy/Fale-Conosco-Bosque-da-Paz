@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('menu-adm.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {  
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.caixa {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 40px;
+}
+
+.box {
+    width: 1800px;
+    height: 750px;
+    background-color: rgba(248, 248, 248, 0.85);
+    border-radius: 10px;
+}
+
+.box h1 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 30px;
+}
+
+.txt1 {
+    position: absolute;
+    top: 40%;
+    left: 1185px;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+}
+
+.txt2 {
+    position: absolute;
+    top: 55%;
+    left: 1170px;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+}
+
+.negrito{
+    font-weight: 800;
+    font-size: 16px;
+}
+
+.circulo {
+    position: absolute;
+    top: 28%;
+    left: 1345px;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(214, 214, 214);
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circulo img {
+    width: 80px;
+    height: 80px;
+}
+
+.circulo2 {
+    position: absolute;
+    top: 825px;
+    left: 70px;
+    z-index: 1;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circulo2 img {
+    width: 60px;
+    height: 50px;
+    transition: all .3s ease;
+}
+
+.circulo2 img:hover {
+    transform: scale(1.18);
+    cursor: pointer;
+}
+
+.imagem {
+    position: absolute;
+    top: 10%;
+    left: 0px;
+    z-index: -1
+}
+
+.imagem2 {
+    position: absolute;
+    top: 90px;
+    right: -70px;
+    z-index: -1
+}
+
+.imagem3 {
+    position: absolute;
+    top: 75%;
+    right: -130px;
+    z-index: -1
+}
+
+.form-box {
+    position: absolute;
+    top: 25%;
+    left: 250px;
+    width: 35%;
+}
+
+.form-box .formulario-do-cadastro label {
+    display: block;
+    padding-left: 5px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.form-box .formulario-do-cadastro input {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid transparent;
+    outline: none;
+    padding: 15px;
+    font-size: 15px;
+    color: black;
+    transition: all 0.4s ease;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+    border-right: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+
+.form-box .formulario-do-cadastro input::placeholder {
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.form-box .formulario-do-cadastro input:focus {
+    background-color: rgb(255, 255, 255);
+    transform: scale(1.04);
+}
+
+.form-box .formulario-do-cadastro #mensagem {
+    padding: 120px;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.enviar {
+    position: absolute;
+    top: 750px;
+    left: 20%;
+    width: 350px;
+    height: 50px;
+    font-size: 14px;
+    font-weight: bolder;
+    color: white;
+    border: none;
+    background-color: #132868;
+    transition: all .2s ease;
+}
+
+.enviar:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(2, 124, 141, 0.8);
+}
+
+@media (max-width: 768px) {
+    body {
+        max-width: 100vw;
+        background-color: red;
+    }
+    .box {
+        width: 400px;
+        height: 175vh;
+    }
+
+    .circulo {
+        position: absolute;
+        top: 135px;
+        left: 140px;
+    }
+
+    .circulo2 {
+        position: absolute;
+        top: 1210px;
+        left: 10px;
+    }
+
+    .txt1{
+        font-size: 15px;
+        position: absolute;
+        top: 130px;
+        left: 0px;
+    }
+
+    .txt2 {
+        font-size: 14px;
+        position: absolute;
+        top: 250px;
+        left: 0px;
+    }
+
+    .box h1 {
+        position: relative;
+        top: 400px;
+    }
+
+    .form-box {
+        position: absolute;
+        top: 650px;
+        left: 40px;
+        width: 300px;
+    }
+
+    .enviar {
+        position: absolute;
+        top: 1150px;
+        left: 70px;
+        width: 250px;
+    }
+
+    .imagem {
+        left: -30px;
+    }
+
+    .imagem2 {
+        display: block;
+        left: 250px;
+        width: 10px;
+    }
+    
+    .imagem3 {
+        top: 1050px;
+        left: 300px;
+    }
+
+    .enviar:hover {
+        box-shadow: 0px 0px 0px 0px;
+
+    }
+}
